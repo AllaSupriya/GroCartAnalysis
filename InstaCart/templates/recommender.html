@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <form action="",class = "form-inline" method = "post">
+    <label for="fname">Enter the user name that is to be recommend:</label><br>
+    <input type="number" class = "form-control" id="fname" name="fname" value="{{request.form.fname}}" required><br>
+    <input type="submit" value="Submit">
+  </form>
+</head>
+<body>
+<ol>
+<!-- For loop logic of jinja template -->
+{%for i in range(0, l)%}
+
+	<li>{{a[i]}}</li>
+{%endfor%}
+
+</ol>
+
+</body>
+</html>
